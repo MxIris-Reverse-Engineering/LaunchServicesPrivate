@@ -7,7 +7,6 @@
 
 @interface LSResourceProxy : _LSQueryResult
 @property (copy, nonatomic, setter=_setLocalizedName:) NSString *localizedName;
-@property (copy, nonatomic, setter=_setIconsDictionary:) _LSLazyPropertyList *_iconsDictionary;
 @property (readonly, nonatomic) id<LSIconResourceLocator> iconResourceLocator;
 @property (readonly, nonatomic) BOOL boundIconIsBadge;
 @property (readonly, nonatomic) NSDictionary *iconsDictionary;

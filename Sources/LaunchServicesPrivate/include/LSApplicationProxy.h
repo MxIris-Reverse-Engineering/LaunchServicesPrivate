@@ -12,7 +12,6 @@
 
 @interface LSApplicationProxy : LSBundleProxy <LSDetachable, NSSecureCoding>
 
-@property (readonly) NSArray *if_userActivityTypes;
 @property (readonly, nonatomic) int bundleModTime;
 @property (nonatomic) BOOL userInitiatedUninstall;
 @property (readonly, nonatomic) BOOL supportsAlternateIconNames;

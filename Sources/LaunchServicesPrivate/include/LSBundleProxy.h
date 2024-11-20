@@ -2,21 +2,13 @@
 #import "LSResourceProxy.h"
 #import "LSContext.h"
 
-@class NSUUID, NSString, _LSLazyPropertyList, NSArray, LSApplicationProxy, NSURL, NSDictionary;
+@class LSApplicationProxy;
 
 @interface LSBundleProxy : LSResourceProxy <NSSecureCoding>
 
-@property (readonly) BOOL _inf_isSystem;
-@property (readonly) BOOL if_isSystem;
-@property (readonly) BOOL if_isAppExtension;
-@property (readonly) BOOL if_isWatchKitAppExtension;
-@property (readonly) LSApplicationProxy *if_containingAppProxy;
 @property (readonly, nonatomic) NSString *localizedShortName;
-@property (copy, nonatomic, setter=_setInfoDictionary:) _LSLazyPropertyList *_infoDictionary;
 @property (copy, nonatomic) NSArray *machOUUIDs;
 @property (copy, nonatomic, setter=setSDKVersion:) NSString *sdkVersion;
-@property (copy, nonatomic, setter=_setEntitlements:) _LSLazyPropertyList *_entitlements;
-@property (copy, nonatomic, setter=_setEnvironmentVariables:) _LSLazyPropertyList *_environmentVariables;
 @property (readonly, nonatomic) NSString *bundleIdentifier;
 @property (readonly, nonatomic) NSString *bundleType;
 @property (readonly, nonatomic) NSURL *bundleURL;
